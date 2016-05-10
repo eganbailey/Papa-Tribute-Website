@@ -1,41 +1,91 @@
-h1{
-  text-align: center;
-}
-h3{
+h1 {
   text-align: center;
 }
 
-#navcontainer ul
-{
-margin: 0;
-padding: 0;
-list-style-type: none;
+h3 {
   text-align: center;
 }
 
-#navcontainer ul li { display: inline; }
+.button {
+  background: src ""
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+#navcontainer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+#navcontainer ul li {
+  display: inline;
+}
 
 .listTwo {
   list-style-type: none;
   text-align: center;
 }
+
 .list {
   list-style-type: none;
   text-align: center;
 }
+
 .list2 {
   list-style-type: none;
   text-align: center;
 }
-.imageButton(@imageName, @startColor: @white, @midColor: @white, @colorStop: 25%, @endColor: darken(@white, 10%)) {
-    background-color: mix(@midColor, @endColor, 80%);
-    background-image: url(@imageName);
-    background-image: url(@imageName), -moz-linear-gradient(top, @startColor, @midColor @colorStop, @endColor);
-    background-image: url(@imageName), -ms-linear-gradient(@startColor, @midColor @colorStop, @endColor);
-    background-image: url(@imageName), -webkit-linear-gradient(@startColor, @midColor @colorStop, @endColor);
-    background-image: url(@imageName), -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
-    background-image: url(@imageName), -o-linear-gradient(@startColor, @midColor @colorStop, @endColor);
-    background-image: url(@imageName), linear-gradient(@startColor, @midColor @colorStop, @endColor);
-    background-repeat: no-repeat;
-    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@startColor,@endColor)); // IE9 and down, gets no color-stop at all for proper fallback
+
+.hoverImg {
+  opacity: 0.5;
+  margin-top: 0px;
+  box-shadow: 0px 0px 0px #000;
+  width: 500px;
+  height: 500px;
+  background: blue;
+}
+
+.round-button {
+  width: 304px;
+}
+
+.round-button-circle {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  background-image: url('https://lh4.ggpht.com/8tP0aaEmrb4_Qr1n1futB9Xf2ibWBkw5jTcNic6uXOgxo_1qxhkJG7KccHRaN4cKr1c=w300');
+  border: 1px solid #cfdcec;
+  overflow: hidden;
+}
+
+.round-button-circle:hover {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg5dehjQFh1efbS3aSDtsxX9DRl1TgKLsc22-jdawVAtvgplcReCe4kKw');
+}
+
+.round-button2 {
+  width: 304px;
+}
+
+.round-button-circle2 {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  background-image: url('https://lh4.ggpht.com/8tP0aaEmrb4_Qr1n1futB9Xf2ibWBkw5jTcNic6uXOgxo_1qxhkJG7KccHRaN4cKr1c=w300');
+  border: 1px solid #cfdcec;
+  overflow: hidden;
+}
+
+.round-button-circle2:hover {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg5dehjQFh1efbS3aSDtsxX9DRl1TgKLsc22-jdawVAtvgplcReCe4kKw');
+}
+img.green:hover{
+  border-color: #66afe9;
+  box-shadow: 0 0 20px rgba(0,255,0, 0.6);
 }
