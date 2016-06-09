@@ -7,7 +7,6 @@ $(window).scroll(function() {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 });
-
 $("#mrbean").hover(function() {
     var img = $("#mrbean");
     
@@ -17,15 +16,15 @@ $("#mrbean").hover(function() {
     }
 });
 
-$('.round-button2').each(function()
-{
-    $(this).mouseover(function()
-    {
-        $(this).animate({'opacity': 1, 'margin-top': '5px', 'box-shadow': '2px 2px 2px #000'}, {duration: 1000});
-    });
-    $(this).mouseout(function()
-    {
-        $(this).animate({'opacity': 0.2, 'margin-top': '0px', 'box-shadow': '0px 0px 0px #000'}, {duration: 1000});
-    });
-});
+//$('.round-button2').each(function()
+//{
+  //  $(this).mouseover(function()
+   // {
+   //     $(this).animate({'opacity': 1, 'margin-top': '5px', 'box-shadow': '2px 2px 2px #000'}, {duration: 1000});
+    //});
+    //$(this).mouseout(function()
+    //{
+     //   $(this).animate({'opacity': 0.2, 'margin-top': '0px', 'box-shadow': '0px 0px 0px #000'}, {duration: 1000});
+    //});
+//});
 });
